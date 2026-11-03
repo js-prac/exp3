@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>String Operations</h1>
+
+    <input type="text" id="str" placeholder="Enter a string">
+
+    <button id="resetBtn">Reset</button>
+
+    <select id="operation">
+        <option value="">Select Operation</option>
+        <option value="reverse">Reverse</option>
+        <option value="replace">Replace Character</option>
+        <option value="palindrome">Check Palindrome</option>
+    </select>
+
+    <div id="replaceDiv">
+
+        <label>Character to Replace</label>
+        <input type="text" id="oldChar" maxlength="1">
+
+        <label>Replace With</label>
+        <input type="text" id="newChar" maxlength="1">
+
+        <button onclick="replaceChar()">Replace</button>
+
+    </div>
+
+    <h3 id="result"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
